@@ -1,0 +1,30 @@
+/* HRDashboard.css */
+.hr-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fefefe;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
