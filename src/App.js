@@ -5,12 +5,16 @@ import HRDashboard from "./components/HRDashboard";
 import AdminDashboard from "./components/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PersonApp from "./PersonApp";
+import EmployeeDetails from "./headers/EmployeeDetails"; // ✅ Import new component
 
 export default function App() {
   return (
     <Router>
       <Routes>
+        {/* Login Page */}
         <Route path="/" element={<LoginPage />} />
+
+        {/* Employee Dashboard */}
         <Route
           path="/employee"
           element={
@@ -19,6 +23,8 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        {/* HR Dashboard */}
         <Route
           path="/hr"
           element={
@@ -27,6 +33,18 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+
+        {/* ✅ Employee Details Page */}
+        <Route
+          path="/hr/employee/:id"
+          element={
+            <ProtectedRoute>
+              <EmployeeDetails />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Admin Dashboard */}
         <Route
           path="/admin"
           element={

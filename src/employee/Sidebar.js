@@ -9,7 +9,7 @@ const Sidebar = ({ active, onNavigate }) => {
   ];
 
   return (
-    <nav className="sidebar">
+    <nav className="sidebar-employee">
       {items.map((it) => (
         <div
           key={it.id}
