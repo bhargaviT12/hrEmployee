@@ -76,20 +76,24 @@
 /* ---------- Tabs ---------- */
 .tabs {
   display: flex;
-  gap: 30px;
-  border-bottom: 2px solid #e0e0e0;
-  margin: 10px 0;
-  font-size: 16px;
+  gap: 250px;
+  /* border-bottom: 2px solid #e0e0e0; */
+  /* margin: 10px 0; */
+  font-size: 30px;
   font-weight: 500;
-  padding-bottom: 6px;
+  /* padding-bottom: 6px; */
 }
 
 .tab {
+    text-align: center;
+    width: 30%;
   position: relative;
   cursor: pointer;
-  padding-bottom: 6px;
+  /* padding-bottom: 6px; */
   color: #666;
   transition: 0.3s ease;
+    /* padding-left: 100px; */
+
 }
 
 .tab:hover {

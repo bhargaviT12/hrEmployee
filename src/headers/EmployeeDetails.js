@@ -77,12 +77,7 @@ export default function EmployeeDetails() {
         >
           Personal
         </span>
-        <span
-          className={`tab ${activeTab === "education" ? "active" : ""}`}
-          onClick={() => setActiveTab("education")}
-        >
-          Education
-        </span>
+        
         <span
           className={`tab ${activeTab === "professional" ? "active" : ""}`}
           onClick={() => setActiveTab("professional")}
@@ -106,31 +101,16 @@ export default function EmployeeDetails() {
           <p><b>State:</b> {personal.state}</p>
           <p><b>Pincode:</b> {personal.pincode}</p>
           <p><b>Landmark:</b> {personal.landmark}</p>
+          
         </div>
       )}
 
-      {/* ===== EDUCATION TAB ===== */}
-      {activeTab === "education" && (
-        <div className="education-info">
-          <h3>Education Details</h3>
-          <p><b>10th School:</b> {education.schoolName10}</p>
-          <p><b>10th CGPA:</b> {education.cgpa10}</p>
-          <p><b>12th/Intermediate College:</b> {education.collegeName12}</p>
-          <p><b>12th CGPA:</b> {education.cgpa12}</p>
-          <p><b>UG College:</b> {education.collegeNameUG}</p>
-          <p><b>UG CGPA:</b> {education.cgpaUG}</p>
-          <p><b>10th Year:</b> {education.year10}</p>
-          <p><b>12th Year:</b> {education.year12}</p>
-          <p><b>UG Year:</b> {education.yearUG}</p>
-          <p><b>Gap Reason (12th):</b> {education.gapReason12 || "N/A"}</p>
-          <p><b>Gap Reason (UG):</b> {education.gapReasonUG || "N/A"}</p>
-        </div>
-      )}
+      
 
       {/* ===== PROFESSIONAL TAB ===== */}
       {activeTab === "professional" && (
-        <div className="professional-info">
-          <h3>Professional Details</h3>
+        <div className="education-info">
+          <h2>Professional Details</h2>
           <p><b>Skills:</b> {professional.skills}</p>
           <p><b>Projects:</b> {professional.projects}</p>
           <p><b>Certifications:</b> {professional.certificate}</p>
